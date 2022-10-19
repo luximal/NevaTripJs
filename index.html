@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Теплоход. Расписание</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="select-route block">
+			<div class="label">Выберите направление</div>
+			<select name="route" id="route">
+				<option value="AB">A ⇒ B</option>
+				<option value="BA">B ⇒ A</option>
+				<option value="ABA">A ⇒ B ⇒ А</option>
+			</select>
+
+		</div>
+
+		<div class="select-time__AB block">
+			<div class="label">Выберите время A ⇒ B</div>
+			<select name="time__AB" id="time__AB">
+				<option disabled selected hidden>Выбрать</option>
+				<option value="18:00">18:00 (из A в B)</option>
+				<option value="18:30">18:30 (из A в B)</option>
+				<option value="18:45">18:45 (из A в B)</option>
+				<option value="19:00">19:00 (из A в B)</option>
+				<option value="19:15">19:15 (из A в B)</option>
+				<option value="21:00">21:00 (из A в B)</option>
+			</select>
+		</div>
+
+		<div class="select-time__BA hidden block">
+			<div class="label">Выберите время B ⇒ A</div>
+			<select name="time__BA" id="time__BA">
+				<option disabled selected hidden>Выбрать</option>
+				<option value="18:30">18:30 (из B в A)</option>
+				<option value="18:45">18:45 (из B в A)</option>
+				<option value="19:00">19:00 (из B в A)</option>
+				<option value="19:15">19:15 (из B в A)</option>
+				<option value="19:35">19:35 (из B в A)</option>
+				<option value="21:50">21:50 (из B в A)</option>
+				<option value="21:55">21:55 (из B в A)</option>
+			</select>
+		</div>
+
+		<div class="ticket_count block">
+			<div class="label">Количество:</div>
+			<input type="button" value="-" id="button_minus" class="btn">
+			<input type="tel" value="1" id="num_count" step="1" min="1" name="quantity" title="Qty">
+			<input type="button" value="+" id="button_plus">
+		</div>
+
+		<button class="calculation">Посчитать</button>
+
+		<div class="info hidden">
+			Вы выбрали билетов: <span class="ticketCount">1</span><br>
+			Маршрут: <span class="travelRoute">из A в B</span><br>
+			Стоимость: <span class="travelCost">700</span> ₽.<br>
+			Это путешествие займет у вас <span class="travelDuration">50</span> минут.<br>
+			Теплоход отправляется в <span class="travelStart">12-00</span>,
+			а прибудет в <span class="travelEnd">18-00</span>.
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

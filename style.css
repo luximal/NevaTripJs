@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	color: #1a2a3a;
+	background: #2c3e50;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 480px;
+	margin: 200px auto 0;
+	padding: 20px;
+	background: #eee;
+	border-radius: 5px;
+	box-shadow: 0 10px 15px rgb(0 0 0 / 30%);
+}
+
+.select-route {}
+
+.select-time__AB {}
+
+.select-time__BA {}
+
+.ticket_count {}
+
+.block {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+.block select {
+	width: 130px;
+}
+
+.label {
+	width: 200px;
+}
+
+#num_count {
+	width: 86px;
+}
+
+.calculation {
+	width: 130px;
+	margin-left: 200px;
+}
+
+.info {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #2c3e50;
+}
+
+.hidden {
+	display: none;
+}
